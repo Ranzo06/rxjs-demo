@@ -1,0 +1,14 @@
+<div class="child-container">
+    <div class="child-title">Observable Send Message:</div>
+    <form [formGroup]="form" class="form">
+        <div>
+            <label for="textField" style="font-weight: bold;">Message: </label>
+            <input id="textField" formControlName="textField" type="text">
+        </div>
+        <div style="display: flex; gap: 12px;">
+            <button type="button" (click)="onError()">Error</button>
+            <button type="button" (click)="onComplete()">Complete</button>
+            <button type="button" (click)="onSend()">Send</button>
+        </div>
+    </form>
+</div>
